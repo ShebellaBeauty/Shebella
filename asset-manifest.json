@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Shebella/static/css/main.5749bb32.css",
+    "main.js": "/Shebella/static/js/main.62cf4de6.js",
+    "index.html": "/Shebella/index.html",
+    "main.5749bb32.css.map": "/Shebella/static/css/main.5749bb32.css.map",
+    "main.62cf4de6.js.map": "/Shebella/static/js/main.62cf4de6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5749bb32.css",
+    "static/js/main.62cf4de6.js"
+  ]
+}
