@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Shebella/static/js/main.7f4bfd88.js",
+    "main.js": "/Shebella/static/js/main.9aa6df03.js",
     "static/js/208.d2f8c5a7.chunk.js": "/Shebella/static/js/208.d2f8c5a7.chunk.js",
     "static/js/293.02a17dca.chunk.js": "/Shebella/static/js/293.02a17dca.chunk.js",
     "static/js/917.e1da3401.chunk.js": "/Shebella/static/js/917.e1da3401.chunk.js",
@@ -23,7 +23,7 @@
     "static/media/webwizards.webp": "/Shebella/static/media/webwizards.8b59ebbb4a399037f1fd.webp",
     "static/media/topBanner.webp": "/Shebella/static/media/topBanner.23fe5c4343f27c31e981.webp",
     "index.html": "/Shebella/index.html",
-    "main.7f4bfd88.js.map": "/Shebella/static/js/main.7f4bfd88.js.map",
+    "main.9aa6df03.js.map": "/Shebella/static/js/main.9aa6df03.js.map",
     "208.d2f8c5a7.chunk.js.map": "/Shebella/static/js/208.d2f8c5a7.chunk.js.map",
     "293.02a17dca.chunk.js.map": "/Shebella/static/js/293.02a17dca.chunk.js.map",
     "917.e1da3401.chunk.js.map": "/Shebella/static/js/917.e1da3401.chunk.js.map",
@@ -34,6 +34,6 @@
     "23.46053682.chunk.js.map": "/Shebella/static/js/23.46053682.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7f4bfd88.js"
+    "static/js/main.9aa6df03.js"
   ]
 }
