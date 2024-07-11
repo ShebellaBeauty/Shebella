@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 //import local components
-import topbanner from "./Assets/topBanner.webp";
+import topbanner from "./Assets/topBanner.jpg";
 import Homepage from "./homepage";
 import Listings from "./listings";
 import Carmart from "./carmart";
@@ -38,6 +38,7 @@ function NavBar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  //topbanner of the navbar
 
   const bodyStyle = {
     padding: "none",
@@ -49,7 +50,7 @@ function NavBar() {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "#051D40",
+    backgroundColor: "#35045c",
     padding: "1% 0",
     width: "100%",
     position: "relative",
@@ -64,7 +65,7 @@ function NavBar() {
   };
 
   const logoStyle = {
-    width: "30%",
+    width: "14%",
   };
 
   const menuStyle = {
@@ -73,7 +74,7 @@ function NavBar() {
     top: "100%",
     left: 0,
     right: 0,
-    backgroundColor: "#051D40",
+    backgroundColor: "#35045c",
     textAlign: "center",
   };
 
@@ -81,13 +82,13 @@ function NavBar() {
   const hamburgerStyle = {
     display: isMobileView ? "block" : "none", // boolean value to either show or hide the hamburger menu
     fontSize: "30px",
-    color: "#fff",
+    color: "white", //hamburger icon color
     cursor: "pointer",
     marginLeft: "auto",
     marginRight: "auto",
   };
 
-  const navLinksContainerStyle = {
+  const navLinksContainerStyle = { //the navbar when the hamburger icon is activated
     display: isMobileView ? "none" : "flex", // boolean value to flex the nav links
     justifyContent: "space-around",
     width: "100%",
@@ -104,11 +105,10 @@ function NavBar() {
       <div style={bodyStyle}>
         <div
           style={{
-            backgroundColor: "#fff",
+            backgroundColor: "#512573",
             textAlign: "center",
             padding: "20px 0",
           }}
-          className="topbannerContainer"
         >
           <img
             src={topbanner}

@@ -9,7 +9,7 @@ function Carmart() {
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    background: "#D50000",
+    background: "darkred",
     position: "sticky", // Make the component sticky
     top: 0, // Stick to the top of the viewport
     zIndex: 999, // Ensure it stays above other content but below the navbar
@@ -26,10 +26,10 @@ function Carmart() {
     <div style={containerWrapper}>
       <a
         style={aStyle}
-        href="https://www.sgcarmart.com/used_cars/listing.php?DL=1353"
+        href="https://www.facebook.com/ShebellaBeautyandSlimming/"
       >
         <h1 className="carmart-wrapper" style={textStyles}>
-          Visit our sgcarmart Shop
+          Visit our facebook page!
         </h1>
       </a>
     </div>
