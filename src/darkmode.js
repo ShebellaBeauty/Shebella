@@ -65,6 +65,12 @@ function DarkMode() {
 
     //-------------Google Maps----------------------------//
     // Only invert the color of google maps not street view
+    const widgetControl = document.getElementsByClassName("widgetControl")[0];
+    if (widgetControl) {
+      //ensure that the DOM element has loaded
+      widgetControl.style.color = darkMode ? "black" : "black";
+    }
+
     const grid1Maps = document.getElementsByClassName("grid1maps")[0];
     if (grid1Maps) {
       //ensure that the DOM element has loaded

@@ -55,7 +55,7 @@ function Socials() {
 
   return (
     <div style={flexContainer}>
-      <div style={reviewWidget}>
+      <div style={reviewWidget} className="widgetControl">
         <GoogleReviews />
       </div>
       <ElfsightWidget widgetId="9680c738-58a7-4369-8d8e-2b268e961c1a" />
