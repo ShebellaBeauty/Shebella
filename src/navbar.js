@@ -100,8 +100,8 @@ function NavBar() {
   };
 
   return (
-    // default BrowserRouter homepage
-    <Router basename="/">
+    // default BrowserRouter homepage IMPORTANT******
+    <Router basename={process.env.PUBLIC_URL}>
       <div style={bodyStyle}>
         <div
           style={{
@@ -186,6 +186,7 @@ function NavBar() {
           <Route path="/chat-with-jasonbot" element={<chatbot />} />
           <Route path="/listings" element={<Listings />} />
           <Route path="/contact" element={<ParentContact />} />
+
         </Routes>
       </div>
     </Router>
