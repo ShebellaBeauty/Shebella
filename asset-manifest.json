@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Shebella/static/js/main.cac8325e.js",
+    "main.js": "/Shebella/static/js/main.01d42478.js",
     "static/js/208.d2f8c5a7.chunk.js": "/Shebella/static/js/208.d2f8c5a7.chunk.js",
     "static/js/293.02a17dca.chunk.js": "/Shebella/static/js/293.02a17dca.chunk.js",
     "static/js/917.e1da3401.chunk.js": "/Shebella/static/js/917.e1da3401.chunk.js",
@@ -11,19 +11,19 @@
     "static/js/23.46053682.chunk.js": "/Shebella/static/js/23.46053682.chunk.js",
     "static/media/darkModeCanvas.mp4": "/Shebella/static/media/darkModeCanvas.0dcec63ac80d17d5f20f.mp4",
     "static/media/Grid2.mp4": "/Shebella/static/media/Grid2.3a24be6d6f4d166928a3.mp4",
+    "static/media/Grid5.mp4": "/Shebella/static/media/Grid5.f2a9e57aa768a752fa3b.mp4",
+    "static/media/Grid6.mp4": "/Shebella/static/media/Grid6.3ed31ffa7f8bfc3b90ad.mp4",
+    "static/media/Grid7.mp4": "/Shebella/static/media/Grid7.04b8c68b742defcb04f0.mp4",
     "static/media/Grid3.mp4": "/Shebella/static/media/Grid3.df0968558b784fb96cfc.mp4",
-    "static/media/Grid5.mp4": "/Shebella/static/media/Grid5.9ab5166c8363728f7f1b.mp4",
-    "static/media/Grid6.mp4": "/Shebella/static/media/Grid6.6cfc22844b37ddf758c6.mp4",
-    "static/media/Grid7.mp4": "/Shebella/static/media/Grid7.672f9624b729b9b4adec.mp4",
+    "static/media/Grid8.mp4": "/Shebella/static/media/Grid8.0d578c380d688e708a21.mp4",
     "static/media/Grid1.mp4": "/Shebella/static/media/Grid1.94d07c9558034d12a743.mp4",
     "static/media/Grid4.mp4": "/Shebella/static/media/Grid4.71a8ad82e871a2c3cc99.mp4",
     "static/media/GoogleBusinessProfileImages.webp": "/Shebella/static/media/GoogleBusinessProfileImages.d57fd5cf458a4914c9c9.webp",
-    "static/media/Grid8.mp4": "/Shebella/static/media/Grid8.e2909ed668b63f746790.mp4",
-    "static/media/reviewUs.webp": "/Shebella/static/media/reviewUs.37a11ea2368cbfcd2edb.webp",
+    "static/media/reviewUs.png": "/Shebella/static/media/reviewUs.e4e42d4738ef317b2965.png",
     "static/media/webwizards.webp": "/Shebella/static/media/webwizards.8b59ebbb4a399037f1fd.webp",
     "static/media/topBanner.jpg": "/Shebella/static/media/topBanner.403d66f27ddddc09e5bc.jpg",
     "index.html": "/Shebella/index.html",
-    "main.cac8325e.js.map": "/Shebella/static/js/main.cac8325e.js.map",
+    "main.01d42478.js.map": "/Shebella/static/js/main.01d42478.js.map",
     "208.d2f8c5a7.chunk.js.map": "/Shebella/static/js/208.d2f8c5a7.chunk.js.map",
     "293.02a17dca.chunk.js.map": "/Shebella/static/js/293.02a17dca.chunk.js.map",
     "917.e1da3401.chunk.js.map": "/Shebella/static/js/917.e1da3401.chunk.js.map",
@@ -34,6 +34,6 @@
     "23.46053682.chunk.js.map": "/Shebella/static/js/23.46053682.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.cac8325e.js"
+    "static/js/main.01d42478.js"
   ]
 }
