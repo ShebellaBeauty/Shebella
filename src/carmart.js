@@ -10,10 +10,10 @@ function Carmart() {
     alignItems: "center",
     width: "100%",
     background: "#D50000",
-    position: "sticky",  // Make the component sticky
-    top: 0,  // Stick to the top of the viewport
-    zIndex: 999,  // Ensure it stays above other content but below the navbar
-    overflow: "hidden",  // Hide any overflowing content
+    position: "sticky", // Make the component sticky
+    top: 0, // Stick to the top of the viewport
+    zIndex: 999, // Ensure it stays above other content but below the navbar
+    overflow: "hidden", // Hide any overflowing content
   };
 
   const aStyle = {
@@ -28,7 +28,9 @@ function Carmart() {
         style={aStyle}
         href="https://www.sgcarmart.com/used_cars/listing.php?DL=1353"
       >
-        <h1 className="carmart-wrapper" style={textStyles}>Visit our sgcarmart Shop</h1>
+        <h1 className="carmart-wrapper" style={textStyles}>
+          Visit our sgcarmart Shop
+        </h1>
       </a>
     </div>
   );

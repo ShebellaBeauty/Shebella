@@ -1,6 +1,7 @@
 import React from "react";
 import SplineElement from "./splineElement";
 import darkModeVideo from "./Assets/darkModeCanvas.mp4";
+
 const containerWrapper = {
   marginTop: "3%",
   display: "flex",

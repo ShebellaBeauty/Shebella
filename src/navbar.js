@@ -9,7 +9,7 @@ import Listings from "./listings";
 import Carmart from "./carmart";
 import ParentContact from "./contactParent";
 
-const NavBar = () => {
+function NavBar() {
   // state for the hamburger menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   //initial state is false
@@ -118,7 +118,11 @@ const NavBar = () => {
           />
         </div>
         <div style={navBarStyle} className="navbarStyle">
-          <div style={hamburgerStyle} onClick={toggleMenu} className="hamburger">
+          <div
+            style={hamburgerStyle}
+            onClick={toggleMenu}
+            className="hamburger"
+          >
             &#9776;
           </div>
           <div style={navLinksContainerStyle}>
@@ -186,6 +190,6 @@ const NavBar = () => {
       </div>
     </Router>
   );
-};
+}
 
 export default NavBar;

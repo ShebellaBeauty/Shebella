@@ -3,7 +3,7 @@ import storeImge from "./Assets/GoogleBusinessProfileImages.webp";
 import GoogleReviews from "./reviewCarousell";
 
 function Socials() {
-  // Step 1: Initialize state
+  //Step 1: Initialize state
   const [showimage, setShowimage] = useState(false);
 
   console.log("useState");
@@ -46,18 +46,18 @@ function Socials() {
   //   height: "10%",
   // };
 
-
-  const widget1 = {
+  //Widget for google reviews
+  const reviewWidget = {
     width: "80%",
   };
 
   return (
     <div style={flexContainer}>
-      <div style={widget1}>
+      <div style={reviewWidget}>
         <GoogleReviews />
       </div>{" "}
-      
       <div style={flexContainer}>
+        {/* This is for a facebook button that leads to the customer's facebook page, ignore for now because i found a better widget>
         {/* <a
           className="socials-container"
           style={aStyle}

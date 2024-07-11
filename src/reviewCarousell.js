@@ -1,163 +1,215 @@
-import React, { useState, useEffect } from "react";
+var React = require("react");
 
-const styles = `
-  .carousel-container {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  .review-card {
-    background-color: #f3f4f6;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  .review-card.fade-out {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  .stars {
-    color: #fbbf24;
-    font-size: 24px;
-    margin-bottom: 12px;
-  }
-  .review-text {
-    margin-bottom: 16px;
-  }
-  .author-info {
-    display: flex;
-    align-items: center;
-  }
-  .author-initial {
-    background-color: #065f46;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    margin-right: 12px;
-  }
-  .author-name {
-    font-weight: 600;
-  }
-  .review-date {
-    color: #6b7280;
-    font-size: 14px;
-  }
-  .google-logo {
-    height: 24px;
-    margin-top: 16px;
-  }
-  .nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .prev-button { left: -20px; }
-  .next-button { right: -20px; }
-`;
+// Style objects
+const carouselContainerStyle = {
+  position: 'relative',
+  maxWidth: '1000px',
+  margin: '0 auto',
+};
 
-const ReviewCard = ({ review, isFading }) => (
-  <div className={`review-card ${isFading ? "fade-out" : ""}`}>
-    <div className="stars">
-      {"★".repeat(review.rating)}
-      {"☆".repeat(5 - review.rating)}
-    </div>
-    <p className="review-text">{review.text}</p>
-    <div className="author-info">
-      <div className="author-initial">{review.author[0].toUpperCase()}</div>
-      <div>
-        <p className="author-name">{review.author}</p>
-        <p className="review-date">{review.date}</p>
-      </div>
-    </div>
-    <img
-      src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
-      alt="Google"
-      className="google-logo"
-    />
-  </div>
-);
+const reviewCardStyle = (isFading) => ({
+  backgroundColor: '#f3f4f6',
+  padding: '24px',
+  borderRadius: '8px',
+  boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+  transition: 'opacity 0.3s ease, transform 0.3s ease',
+  opacity: isFading ? 0 : 1,
+  transform: isFading ? 'translateX(-20px)' : 'none',
+});
 
-const GoogleReviewsCarousel = ({ reviews }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isFading, setIsFading] = useState(false);
+const starsStyle = {
+  color: '#fbbf24',
+  fontSize: '24px',
+  marginBottom: '12px',
+};
 
-  const nextReview = () => {
+const reviewTextStyle = {
+  marginBottom: '16px',
+};
+
+const authorInfoStyle = {
+  display: 'flex',
+  alignItems: 'center',
+};
+
+const authorInitialStyle = {
+  backgroundColor: '#065f46',
+  color: 'white',
+  width: '40px',
+  height: '40px',
+  borderRadius: '50%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontWeight: 'bold',
+  marginRight: '12px',
+};
+
+const authorNameStyle = {
+  fontWeight: 600,
+};
+
+const reviewDateStyle = {
+  color: '#6b7280',
+  fontSize: '14px',
+};
+
+const googleLogoStyle = {
+  height: '24px',
+  marginTop: '16px',
+};
+
+const navButtonStyle = {
+  position: 'absolute',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  backgroundColor: 'white',
+  border: 'none',
+  borderRadius: '50%',
+  width: '40px',
+  height: '40px',
+  fontSize: '24px',
+  cursor: 'pointer',
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+};
+
+const prevButtonStyle = {
+  ...navButtonStyle,
+  left: '-20px',
+};
+
+const nextButtonStyle = {
+  ...navButtonStyle,
+  right: '-20px',
+};
+
+var ReviewCard = function(props) {
+  var review = props.review;
+  var isFading = props.isFading;
+  return React.createElement(
+    "div",
+    { style: reviewCardStyle(isFading) },
+    React.createElement(
+      "div",
+      { style: starsStyle },
+      "★".repeat(review.rating),
+      "☆".repeat(5 - review.rating)
+    ),
+    React.createElement("p", { style: reviewTextStyle }, review.text),
+    React.createElement(
+      "div",
+      { style: authorInfoStyle },
+      React.createElement(
+        "div",
+        { style: authorInitialStyle },
+        review.author[0].toUpperCase()
+      ),
+      React.createElement(
+        "div",
+        null,
+        React.createElement("p", { style: authorNameStyle }, review.author),
+        React.createElement("p", { style: reviewDateStyle }, review.date)
+      )
+    ),
+    React.createElement("img", {
+      src:
+        "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+      alt: "Google",
+      style: googleLogoStyle
+    })
+  );
+};
+
+var GoogleReviewsCarousel = function(props) {
+  var reviews = props.reviews;
+  var _React$useState = React.useState(0),
+    currentIndex = _React$useState[0],
+    setCurrentIndex = _React$useState[1];
+  var _React$useState2 = React.useState(false),
+    isFading = _React$useState2[0],
+    setIsFading = _React$useState2[1];
+
+  var nextReview = function() {
     setIsFading(true);
-    setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
+    setTimeout(function() {
+      setCurrentIndex(function(prevIndex) {
+        return (prevIndex + 1) % reviews.length;
+      });
       setIsFading(false);
     }, 300);
   };
 
-  const prevReview = () => {
+  var prevReview = function() {
     setIsFading(true);
-    setTimeout(() => {
-      setCurrentIndex(
-        (prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length
-      );
+    setTimeout(function() {
+      setCurrentIndex(function(prevIndex) {
+        return (prevIndex - 1 + reviews.length) % reviews.length;
+      });
       setIsFading(false);
     }, 300);
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(nextReview, 5000);
-    return () => clearInterval(intervalId);
+  React.useEffect(function() {
+    var intervalId = setInterval(nextReview, 5000);
+    return function() {
+      return clearInterval(intervalId);
+    };
   }, []);
 
-  return (
-    <>
-      <style>{styles}</style>
-      <div className="carousel-container">
-        <ReviewCard review={reviews[currentIndex]} isFading={isFading} />
-        <button onClick={prevReview} className="nav-button prev-button">
-          &#8249;
-        </button>
-        <button onClick={nextReview} className="nav-button next-button">
-          &#8250;
-        </button>
-      </div>
-    </>
+  return React.createElement(
+    "div",
+    { style: carouselContainerStyle },
+    React.createElement(ReviewCard, {
+      review: reviews[currentIndex],
+      isFading: isFading
+    }),
+    React.createElement(
+      "button",
+      { onClick: prevReview, style: prevButtonStyle },
+      "‹"
+    ),
+    React.createElement(
+      "button",
+      { onClick: nextReview, style: nextButtonStyle },
+      "›"
+    )
   );
 };
 
 // Sample reviews data
-const sampleReviews = [
+var sampleReviews = [
   {
     rating: 5,
-    text: "Prompt and smooth transaction with well versed experience. Recommended 👍",
+    text:
+      "Prompt and smooth transaction with well versed experience. Recommended 👍",
     author: "vorm peer",
-    date: "6 days ago",
+    date: "6 days ago"
   },
   {
     rating: 5,
-    text: "Throughout the transaction, Edward was transparent and honest, and that gave me a peace of mind in purchasing this unit.",
+    text:
+      "Throughout the transaction, Edward was transparent and honest, and that gave me a peace of mind in purchasing this unit.",
     author: "Kris J",
-    date: "3 years ago",
-  },
+    date: "3 years ago"
+  }
 ];
 
-const GoogleReviews = () => {
-  return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>What our clients say!</h1>
-      <GoogleReviewsCarousel reviews={sampleReviews} />
-      <p style={{ textAlign: "center", marginBottom: "10%"}}>Powered by Web Wizards Wigets</p>
-    </div>
+var GoogleReviews = function() {
+  return React.createElement(
+    "div",
+    null,
+    React.createElement(
+      "h1",
+      { style: { textAlign: "center" } },
+      "What our clients say!"
+    ),
+    React.createElement(GoogleReviewsCarousel, { reviews: sampleReviews }),
+    React.createElement(
+      "p",
+      { style: { textAlign: "center", marginBottom: "10%" } },
+      "Powered by Web Wizards Widgets"
+    )
   );
 };
 
-export default GoogleReviews;
+module.exports = GoogleReviews;

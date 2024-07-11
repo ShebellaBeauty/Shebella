@@ -10,7 +10,6 @@ function ContactInfo() {
     marginTop: "10%",
     marginBottom: "3%",
     overflow: "hidden",
-    flexDirection: "column",
   };
 
   const bodyStyle = {
@@ -42,10 +41,9 @@ function ContactInfo() {
     alignItems: "center",
   };
 
-
   const reviewImg = {
     width: "100%",
-  }
+  };
 
   return (
     <div style={containerWrapper} className="contact">
@@ -54,14 +52,18 @@ function ContactInfo() {
         <div style={subContent} className="subcontent">
           <p className="pstyle">Phone: 6440 5131</p>
           <p className="pstyle">Email: richard@lemotor.com.sg</p>
-          <p className="pstyle">Richard Wong (Purchaser): <br></br> 9769 2303</p>
-          <p className="pstyle">Alan Sim (Sales) <br></br>9821 1739</p>
+          <p className="pstyle">
+            Richard Wong (Purchaser): <br></br> 9769 2303
+          </p>
+          <p className="pstyle">
+            Alan Sim (Sales) <br></br>9821 1739
+          </p>
         </div>
 
         <a href="https://g.page/r/CQJmRZAPZC1GEBM/review">
-        <div style={subContent1} className="subcontent">
-          <img src={reviewUs} style={reviewImg} alt="reviewUs" />
-        </div>
+          <div style={subContent1} className="subcontent">
+            <img src={reviewUs} style={reviewImg} alt="reviewUs" />
+          </div>
         </a>
       </div>
     </div>
