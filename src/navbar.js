@@ -137,7 +137,7 @@ function NavBar() {
               Chat with our AI bot
             </a>
             <Link to="/listings" style={linkStyle} className="navlinks">
-              Listings
+              Price List
             </Link>
             <Link to="/contact" style={linkStyle} className="navlinks">
               Contact
