@@ -12,7 +12,7 @@ function DarkMode() {
     zIndex: "99",
     fontSize: "18px",
     outline: "none",
-    backgroundColor: "#051d40",
+    backgroundColor: "#512573",
     color: "white",
     cursor: "pointer",
     padding: "15px",
