@@ -17,7 +17,7 @@ const AccordionItem = ({ title, children }) => {
           border: "1px solid #051d41",
           borderRadius: "0.5rem",
           overflow: "hidden",
-          background: "#051d41",
+          background: "#512573",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -37,7 +37,7 @@ const AccordionItem = ({ title, children }) => {
             textAlign: "center",
             transition: "background-color 0.3s",
             fontSize: "150%",
-            background: "#051d41",
+            background: "#512573",
             color: "white",
           }}
         >
@@ -46,6 +46,7 @@ const AccordionItem = ({ title, children }) => {
             style={{
               transform: isOpen ? "rotate(45deg)" : "rotate(0)",
               transition: "transform 0.3s",
+              marginLeft: "0.5rem",
             }}
           >
             +
@@ -84,13 +85,13 @@ const CarOptionsSection = () => {
           textAlign: "center",
         }}
       >
-        Why Le Motor Enterprise
+        Why Shebella Beauty
       </h1>
 
       <div>
-        <AccordionItem title="Renting a Car in Singapore">
+        <AccordionItem title="AirJet Treatments">
           <h4 style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
-            Benefits of Renting:
+            Benefits of AirJet:
           </h4>
           <ul
             style={{
@@ -99,23 +100,23 @@ const CarOptionsSection = () => {
               marginBottom: "1rem",
             }}
           >
-            <li>Flexibility for short-term needs</li>
-            <li>No long-term financial commitment</li>
-            <li>Access to newer models</li>
-            <li>Maintenance and insurance often included</li>
-            <li>Ideal for tourists or temporary residents</li>
+            <li>Pain-free solution for aesthetic needs</li>
+            <li>Minimally-invasive yet highly-effective</li>
+            <li>Skin rejuvenation, wrinkle reduction, acne scar removal</li>
+            <li>No needles required</li>
           </ul>
           <p>
-            Renting a car in Singapore can be a great option if you need a
-            vehicle for a short period or want to avoid the high costs of car
-            ownership. It's particularly suitable for those who don't require a
-            car daily or are unsure about their long-term transportation needs.
+            Need a cosmetic tuneup but afraid of needles? Our revolutionary
+            AirJet treatments provide a pain-free solution for all your
+            aesthetic needs. Minimally-invasive yet highly-effective, AirJet
+            utilizes pneumatic spray technology to help with skin rejuvenation,
+            wrinkle reduction, or acne scar removal. No needles required. ✨
           </p>
         </AccordionItem>
 
-        <AccordionItem title="Buying a Used Car in Singapore">
+        <AccordionItem title="V-Jet Treatments">
           <h4 style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
-            Advantages of Buying Used:
+            Benefits of V-Jet:
           </h4>
           <ul
             style={{
@@ -124,24 +125,21 @@ const CarOptionsSection = () => {
               marginBottom: "1rem",
             }}
           >
-            <li>Lower initial cost compared to new cars</li>
-            <li>Avoid steep depreciation of new vehicles</li>
-            <li>More affordable Certificate of Entitlement (COE)</li>
-            <li>Wide variety of models available</li>
-            <li>Potential for resale value</li>
+            <li>Long-lasting results</li>
+            <li>Little to no downtime</li>
+            <li>Non-invasive procedure</li>
+            <li>FDA-approved and safe</li>
           </ul>
           <p>
-            Purchasing a used car in Singapore can be a wise financial decision.
-            With the high cost of new vehicles and rapid depreciation, a
-            well-maintained used car offers significant savings. It's an
-            excellent option for those who need regular access to a vehicle and
-            are looking for a balance between cost and ownership.
+            Our V-Jet line of treatments is recommended for patients who want
+            long-lasting results with little to no downtime. Enquire with us
+            today to find out how you can benefit from our V-Jet treatments. 💌
           </p>
         </AccordionItem>
 
-        <AccordionItem title="Factors to Consider">
+        <AccordionItem title="Non-Invasive Solutions">
           <h4 style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
-            Key Considerations:
+            Key Benefits:
           </h4>
           <ul
             style={{
@@ -150,20 +148,24 @@ const CarOptionsSection = () => {
               marginBottom: "1rem",
             }}
           >
-            <li>Budget: Initial cost and long-term expenses</li>
-            <li>Usage frequency: Daily commute vs. occasional use</li>
-            <li>Duration of stay in Singapore</li>
-            <li>Parking availability and costs</li>
-            <li>Maintenance and potential repair costs</li>
-            <li>Singapore's car ownership policies and COE system</li>
+            <li>100% Safe — FDA-Approved Procedure</li>
+            <li>Non-Invasive — Needleless</li>
+            <li>Quick Process within 60 minutes</li>
+            <li>Short Downtime — 2-3 days</li>
+            <li>Affordable</li>
+            <li>No GST, No Hard Selling, No Hidden Fees</li>
           </ul>
           <p>
-            Whether you choose to rent or buy a used car in Singapore depends on
-            your specific circumstances. Consider your budget, how often you'll
-            need the car, and how long you plan to stay in Singapore. Also,
-            factor in Singapore's unique car ownership policies, including the
-            COE system, which can significantly impact the overall cost of
-            owning a vehicle.
+            Feeling unsatisfied with your current appearance? Discover a
+            non-invasive solution to transform your facial features such as nose
+            lifting, laugh line filling, and lip enhancement and boost your
+            confidence! ✨ Our accredited non-invasive procedure offers minimal
+            downtime and long-lasting effects within a few sessions. 💆🏻‍♀️
+            ❗️Please note that individual results may vary❗️
+          </p>
+          <p>
+            We accept $100 CDC vouchers here! Due to high demand, this is
+            strictly by appointment only! Message us to book your slot now!
           </p>
         </AccordionItem>
       </div>
