@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Shebella/static/js/main.e979f79f.js",
+    "main.js": "/Shebella/static/js/main.dc22295a.js",
     "static/js/208.d2f8c5a7.chunk.js": "/Shebella/static/js/208.d2f8c5a7.chunk.js",
     "static/js/293.02a17dca.chunk.js": "/Shebella/static/js/293.02a17dca.chunk.js",
     "static/js/917.e1da3401.chunk.js": "/Shebella/static/js/917.e1da3401.chunk.js",
@@ -21,9 +21,9 @@
     "static/media/Grid8.mp4": "/Shebella/static/media/Grid8.e2909ed668b63f746790.mp4",
     "static/media/reviewUs.webp": "/Shebella/static/media/reviewUs.37a11ea2368cbfcd2edb.webp",
     "static/media/webwizards.webp": "/Shebella/static/media/webwizards.8b59ebbb4a399037f1fd.webp",
-    "static/media/topBanner.jpg": "/Shebella/static/media/topBanner.a068a159d135f07525f1.jpg",
+    "static/media/topBanner.jpg": "/Shebella/static/media/topBanner.403d66f27ddddc09e5bc.jpg",
     "index.html": "/Shebella/index.html",
-    "main.e979f79f.js.map": "/Shebella/static/js/main.e979f79f.js.map",
+    "main.dc22295a.js.map": "/Shebella/static/js/main.dc22295a.js.map",
     "208.d2f8c5a7.chunk.js.map": "/Shebella/static/js/208.d2f8c5a7.chunk.js.map",
     "293.02a17dca.chunk.js.map": "/Shebella/static/js/293.02a17dca.chunk.js.map",
     "917.e1da3401.chunk.js.map": "/Shebella/static/js/917.e1da3401.chunk.js.map",
@@ -34,6 +34,6 @@
     "23.46053682.chunk.js.map": "/Shebella/static/js/23.46053682.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.e979f79f.js"
+    "static/js/main.dc22295a.js"
   ]
 }
