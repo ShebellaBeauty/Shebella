@@ -23,7 +23,7 @@ function ContactInfo() {
 
   const subContent = {
     marginTop: "3%",
-    background: "#051D40",
+    background: "#512573",
     padding: "10%",
     display: "flex",
     flexDirection: "column",
@@ -33,7 +33,7 @@ function ContactInfo() {
 
   const subContent1 = {
     marginTop: "3%",
-    background: "#051D40",
+    background: "#512573",
     padding: "10%",
     display: "flex",
     flexDirection: "column",
@@ -50,13 +50,15 @@ function ContactInfo() {
       <h1>Contact Information</h1>
       <div style={bodyStyle} className="contactBody">
         <div style={subContent} className="subcontent">
-          <p className="pstyle">Phone: 6440 5131</p>
-          <p className="pstyle">Email: richard@lemotor.com.sg</p>
+          <p className="pstyle">Phone: 92248800</p>
           <p className="pstyle">
-            Richard Wong (Purchaser): <br></br> 9769 2303
+            Toa Payoh branch <br></br>
+            <br></br>
+            85A Lor 4 Toa Payoh, #01-304D, Singapore 311085
           </p>
           <p className="pstyle">
-            Alan Sim (Sales) <br></br>9821 1739
+            Jurong Branch <br></br>
+            Blk 350 Jurong East Ave 1 #01-1239 Level, #2, 600350
           </p>
         </div>
 
