@@ -19,7 +19,7 @@ function Listings() {
   return (
     <>
       <div style={containerWrapper}>
-        <h1 style={h1Style}>Media</h1>
+        <h1 style={h1Style}>Price List 2024</h1>
         <div
           className="canva-embed"
           style={{

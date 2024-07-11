@@ -89,9 +89,9 @@ const CarOptionsSection = () => {
       </h1>
 
       <div>
-        <AccordionItem title="AirJet Treatments">
+        <AccordionItem title="Experts in Beauty">
           <h4 style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
-            Benefits of AirJet:
+            Our experience:
           </h4>
           <ul
             style={{
@@ -100,21 +100,22 @@ const CarOptionsSection = () => {
               marginBottom: "1rem",
             }}
           >
-            <li>Pain-free solution for aesthetic needs</li>
-            <li>Minimally-invasive yet highly-effective</li>
-            <li>Skin rejuvenation, wrinkle reduction, acne scar removal</li>
-            <li>No needles required</li>
+            <li>Many years of experience, warm and friendly personnel</li>
+            <li>
+              Multiple good reviews affrims our good, effective and successful
+              techniques
+            </li>
+            <li>Trust brands with hundreds of customers and testimonials</li>
+            <li>Completely safe with FDA approved techniques only</li>
           </ul>
           <p>
-            Need a cosmetic tuneup but afraid of needles? Our revolutionary
-            AirJet treatments provide a pain-free solution for all your
-            aesthetic needs. Minimally-invasive yet highly-effective, AirJet
-            utilizes pneumatic spray technology to help with skin rejuvenation,
-            wrinkle reduction, or acne scar removal. No needles required. ✨
+            We specialize in the art of miro corrective imaging without using
+            needles. 无针微整形如何让自己便加自信与光彩 ✨
+            You can trust us with all your beauty needs
           </p>
         </AccordionItem>
 
-        <AccordionItem title="V-Jet Treatments">
+        <AccordionItem title="Non Invasive FDA aaproved V-Jet Treatments">
           <h4 style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
             Benefits of V-Jet:
           </h4>
@@ -137,7 +138,7 @@ const CarOptionsSection = () => {
           </p>
         </AccordionItem>
 
-        <AccordionItem title="Non-Invasive Solutions">
+        <AccordionItem title="Comfortable environment for you to relax">
           <h4 style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
             Key Benefits:
           </h4>
@@ -148,24 +149,19 @@ const CarOptionsSection = () => {
               marginBottom: "1rem",
             }}
           >
-            <li>100% Safe — FDA-Approved Procedure</li>
-            <li>Non-Invasive — Needleless</li>
-            <li>Quick Process within 60 minutes</li>
-            <li>Short Downtime — 2-3 days</li>
+            <li>100% fully air-conditioned facility</li>
+            <li>Soft and plush mattresses for you to relax whist we do our work</li>
+            <li>Dark and soft ambience for you to relax</li>
             <li>Affordable</li>
             <li>No GST, No Hard Selling, No Hidden Fees</li>
+            <li>Multiple locations for your own convenience</li>
           </ul>
-          <p>
-            Feeling unsatisfied with your current appearance? Discover a
-            non-invasive solution to transform your facial features such as nose
-            lifting, laugh line filling, and lip enhancement and boost your
-            confidence! ✨ Our accredited non-invasive procedure offers minimal
-            downtime and long-lasting effects within a few sessions. 💆🏻‍♀️
-            ❗️Please note that individual results may vary❗️
-          </p>
           <p>
             We accept $100 CDC vouchers here! Due to high demand, this is
             strictly by appointment only! Message us to book your slot now!
+          </p>
+          <p>
+            We are located at 85A Lor 4 Toa Payoh, #01-304D, Singapore 311085 and at Blk 350 Jurong East Ave 1 #01-1239 Level, #2, 600350
           </p>
         </AccordionItem>
       </div>
