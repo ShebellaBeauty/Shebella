@@ -60,14 +60,7 @@ function DarkMode() {
       document.getElementsByClassName("splineContainer")[0];
     if (splineContainer) {
       //ensure that the DOM element has loaded
-      splineContainer.style.display = darkMode ? "none" : "initial";
-    }
-
-    //Dark mode video replacement for the spline container
-    const videoContainer = document.getElementsByClassName("videoContainer")[0];
-    if (videoContainer) {
-      //ensure that the DOM element has loaded
-      videoContainer.style.display = darkMode ? "initial" : "none";
+      splineContainer.style.filter = darkMode ? "invert(1)" : "invert(0)";
     }
 
     //-------------Google Maps----------------------------//

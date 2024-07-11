@@ -40,10 +40,6 @@ function SpliceElement() {
           <SplineElement />
         </div>
       </div>
-
-      <div style={videoContainer} className="videoContainer">
-        <video src={darkModeVideo} style={videoStyle} muted autoPlay playsInline loop />
-      </div>
     </div>
   );
 }
