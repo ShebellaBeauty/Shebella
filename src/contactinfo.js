@@ -1,4 +1,4 @@
-import reviewUs from "./Assets/reviewUs.png";
+import reviewUs from "./Assets/reviewUs.jpg";
 function ContactInfo() {
   const containerWrapper = {
     display: "flex",
