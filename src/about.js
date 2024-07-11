@@ -106,7 +106,6 @@ const CarOptionsSection = () => {
               techniques
             </li>
             <li>Trust brands with hundreds of customers and testimonials</li>
-            <li>Completely safe with FDA approved techniques only</li>
           </ul>
           <p>
             We specialize in the art of miro corrective imaging without using
@@ -115,7 +114,7 @@ const CarOptionsSection = () => {
           </p>
         </AccordionItem>
 
-        <AccordionItem title="Non Invasive FDA aaproved V-Jet Treatments">
+        <AccordionItem title="Non Invasive V-Jet Treatments">
           <h4 style={{ fontWeight: "600", marginBottom: "0.5rem" }}>
             Benefits of V-Jet:
           </h4>
@@ -129,7 +128,6 @@ const CarOptionsSection = () => {
             <li>Long-lasting results</li>
             <li>Little to no downtime</li>
             <li>Non-invasive procedure</li>
-            <li>FDA-approved and safe</li>
           </ul>
           <p>
             Our V-Jet line of treatments is recommended for patients who want
