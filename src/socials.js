@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import storeImge from "./Assets/GoogleBusinessProfileImages.webp";
 import GoogleReviews from "./reviewCarousell";
+import { ElfsightWidget } from 'react-elfsight-widget';
+
 
 function Socials() {
   //Step 1: Initialize state
@@ -55,48 +57,8 @@ function Socials() {
     <div style={flexContainer}>
       <div style={reviewWidget}>
         <GoogleReviews />
-      </div>{" "}
-      <div style={flexContainer}>
-        {/* This is for a facebook button that leads to the customer's facebook page, ignore for now because i found a better widget>
-        {/* <a
-          className="socials-container"
-          style={aStyle}
-          href="https://www.facebook.com"
-        >
-          Our facebook page
-          <img
-            src={fbLogo}
-            style={fbLogoStyle}
-            className="storeButton"
-            alt="fblogo"
-            loading="lazy"
-          />
-        </a> */}
-
-        {/* <button
-          style={btn}
-          className="storeButton"
-          onClick={() => {
-            window.location.href =
-              "https://www.facebook.com/profile.php?id=61561731779552";
-          }}
-        >
-          Click this here to visit
-        </button> */}
       </div>
-      <button
-        // Step 2: Add event handler
-        style={buttonStyle}
-        className="storeButton"
-        onClick={() => {
-          setShowimage(showimage === false); //update state, set timeframe to true to make the state true
-        }}
-      >
-        Click here to see our Store @ #01-89 Roxy Square
-      </button>
-      <div style={flexContainer1}>
-        <img style={photoStyle} src={storeImge} alt="store" />
-      </div>
+      <ElfsightWidget widgetId="9680c738-58a7-4369-8d8e-2b268e961c1a" />
     </div>
   );
 }
