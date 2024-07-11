@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Shebella/static/js/main.18a76e59.js",
+    "main.js": "/Shebella/static/js/main.6fea29fc.js",
     "static/js/208.d2f8c5a7.chunk.js": "/Shebella/static/js/208.d2f8c5a7.chunk.js",
     "static/js/293.02a17dca.chunk.js": "/Shebella/static/js/293.02a17dca.chunk.js",
     "static/js/917.e1da3401.chunk.js": "/Shebella/static/js/917.e1da3401.chunk.js",
@@ -19,11 +19,11 @@
     "static/media/Grid1.mp4": "/Shebella/static/media/Grid1.94d07c9558034d12a743.mp4",
     "static/media/Grid4.mp4": "/Shebella/static/media/Grid4.71a8ad82e871a2c3cc99.mp4",
     "static/media/GoogleBusinessProfileImages.webp": "/Shebella/static/media/GoogleBusinessProfileImages.d57fd5cf458a4914c9c9.webp",
-    "static/media/reviewUs.png": "/Shebella/static/media/reviewUs.e4e42d4738ef317b2965.png",
+    "static/media/reviewUs.jpg": "/Shebella/static/media/reviewUs.dc0502ae767b9169cc62.jpg",
     "static/media/webwizards.webp": "/Shebella/static/media/webwizards.8b59ebbb4a399037f1fd.webp",
     "static/media/topBanner.jpg": "/Shebella/static/media/topBanner.403d66f27ddddc09e5bc.jpg",
     "index.html": "/Shebella/index.html",
-    "main.18a76e59.js.map": "/Shebella/static/js/main.18a76e59.js.map",
+    "main.6fea29fc.js.map": "/Shebella/static/js/main.6fea29fc.js.map",
     "208.d2f8c5a7.chunk.js.map": "/Shebella/static/js/208.d2f8c5a7.chunk.js.map",
     "293.02a17dca.chunk.js.map": "/Shebella/static/js/293.02a17dca.chunk.js.map",
     "917.e1da3401.chunk.js.map": "/Shebella/static/js/917.e1da3401.chunk.js.map",
@@ -34,6 +34,6 @@
     "23.46053682.chunk.js.map": "/Shebella/static/js/23.46053682.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.18a76e59.js"
+    "static/js/main.6fea29fc.js"
   ]
 }
