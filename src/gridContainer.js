@@ -95,62 +95,6 @@ function GridContainer() {
           />
         </div>
       </div>
-      <div style={gridWrapper}>
-        <div style={gridContainers}>
-          <video
-            src={grid5}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-            loading="lazy"
-          />
-        </div>
-        <div style={gridContainers}>
-          <video
-            src={grid7}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            playsInline
-            autoPlay
-            loop
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <div style={gridWrapper}>
-        <div style={gridContainers}>
-          <video
-            src={grid6}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-            loading="lazy"
-          />
-        </div>
-        <div style={gridContainers}>
-          <video
-            src={grid8}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            loop
-            playsInline
-            loading="lazy"
-          />
-        </div>
-      </div>
     </div>
   );
 }
