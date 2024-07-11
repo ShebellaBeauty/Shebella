@@ -130,7 +130,7 @@ function NavBar() {
               Home
             </Link>
             <a
-              href="https://chatgpt.com/g/g-RitYiGDNl-le-motor-enterprise"
+              href="https://chatgpt.com/g/g-JuFBmJhoZ-shebella-beauty-bot"
               style={linkStyle}
               className="navlinks"
             >

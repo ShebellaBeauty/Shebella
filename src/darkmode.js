@@ -72,12 +72,6 @@ function DarkMode() {
     }
 
     //-------------Footer Styles-----------------------//
-    const footerStyle = document.getElementsByClassName("footerStyle")[0];
-    if (footerStyle) {
-      //ensure that the DOM element has loaded
-      footerStyle.style.filter = darkMode ? "invert(1)" : "invert(0)";
-      footerStyle.style.paddingTop = darkMode ? "7%" : "0%";
-    }
 
     //-------------Footer Styles-----------------------//
     const ModeButton = document.getElementsByClassName("ModeButton")[0];
@@ -99,7 +93,6 @@ function DarkMode() {
     <div>
       <button
         style={buttonStyle}
-        className="ModeButton"
         onClick={() => {
           //add event handler
           setDarkMode(!darkMode);
