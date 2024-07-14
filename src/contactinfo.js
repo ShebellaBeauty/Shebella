@@ -45,6 +45,22 @@ function ContactInfo() {
     width: "100%",
   };
 
+  const openingTime = {
+    fontWeight: "bold",
+    background: "white",
+    color: "#512574",
+    margin: "4%",
+    padding: "4%",
+    border: "1px solid #512574",
+    borderRadius: "1.5rem",
+  };
+
+  const h3Style = {
+    color: "#512574",
+    marginBottom: "0",
+    marginTop: "15%",
+  };
+
   return (
     <div style={containerWrapper} className="contact">
       <h1>Contact Information</h1>
@@ -68,6 +84,12 @@ function ContactInfo() {
           </div>
         </a>
       </div>
+      <h3 style={h3Style}>Service Hours</h3>
+      <p style={openingTime}>
+        Mon - Fri: 11am - 8pm <br></br>
+        <br></br>
+        Sat & Sun: 11am - 5pm
+      </p>
     </div>
   );
 }
