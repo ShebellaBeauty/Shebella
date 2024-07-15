@@ -6,6 +6,7 @@ import Contactparent from "./contactParent";
 import Socials from "./socials";
 import AboutSection from "./about";
 import Quote from "./quote";
+import Setmore from './setmore'
 
 function Homepage() {
   return (
@@ -17,6 +18,7 @@ function Homepage() {
       <Listings />
       <Contactparent />
       <Socials />
+      <Setmore />
     </div>
   );
 }
