@@ -1,4 +1,5 @@
 import quoteImage from "./Assets/Quote.png";
+import vjet from "./Assets/Vjet.png";
 
 function Quote() {
   const containerWrapper = {
@@ -21,6 +22,7 @@ function Quote() {
 
   return <div style={containerWrapper}>
     <img src={quoteImage} style={imageStyle} alt="quote" />
+    <img src={vjet} style={{width: "30%", marginTop: "2rem"}} alt="vjet" />
   </div>;
 }
 
