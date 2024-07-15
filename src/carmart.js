@@ -26,7 +26,7 @@ function Carmart() {
     <div style={containerWrapper}>
       <a
         style={aStyle}
-        href="https://www.facebook.com/ShebellaBeautyandSlimming/"
+        href="https://www.facebook.com/vskinbeautyconsultancy"
       >
         <h1 className="carmart-wrapper" style={textStyles}>
           Visit our facebook page!
