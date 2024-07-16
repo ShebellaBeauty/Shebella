@@ -140,22 +140,23 @@ const ContactForm = () => {
   const styles = {
     mailIcon: {
       position: "fixed",
-      left: "20px",
-      bottom: "20px",
-      width: "50px",
-      height: "50px",
-      backgroundColor: "#003c43",
-      color: "white",
+      left: "10px",
+      bottom: "7px",
       border: "none",
-      borderRadius: "50%",
       cursor: "pointer",
-      fontSize: "24px",
+      fontSize: "100%",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
       zIndex: 1000,
       transition: "background-color 0.3s ease",
+      fontWeight: "bold",
+      background: "darkRed", 
+      borderRadius: "10px",
+      color: "white",
+      padding: "1%",
     },
+
     contactForm: {
       position: "fixed",
       right: isOpen ? "0" : "-400px",
@@ -246,15 +247,15 @@ const ContactForm = () => {
   return (
     <>
       <button style={styles.mailIcon} onClick={toggleForm}>
-        ✉️
+        ✉️ Send us an appointment request
       </button>
       <div style={styles.contactForm}>
         <button style={styles.closeButton} onClick={toggleForm}>
           ×
         </button>
-        <h2 style={styles.formTitle}>Get in touch</h2>
+        <h2 style={styles.formTitle}>Appointment request</h2>
         <p style={styles.formSubtitle}>
-          Leave your message and we'll get back to you shortly.
+          Sent use an appointment request and we will get back to you shortly
         </p>
         <form onSubmit={handleSubmit}>
           <div style={styles.inputGroup}>
@@ -291,14 +292,14 @@ const ContactForm = () => {
           <textarea
             style={styles.textarea}
             name="message"
-            placeholder="Your questions or comments"
+            placeholder="Your questions or comments, appointment date and time"
             required
           />
           <button style={styles.submitButton} type="submit">
             Submit
           </button>
         </form>
-        <p style={Pstyle}>Powered by Web Wizard Forms</p>
+        <p style={Pstyle}>Powered by Web Wizard Forms for Shebella Beauty & slimming</p>
         <img
           src={Logo}
           alt="Web Wizards"
