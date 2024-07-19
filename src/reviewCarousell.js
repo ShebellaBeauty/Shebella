@@ -179,6 +179,18 @@ var GoogleReviewsCarousel = function (props) {
 var sampleReviews = [
   {
     rating: 5,
+    text: "I recently visited Shebella Beauty and Slimming for a V-jet face slimming treatment, After just a few sessions, I noticed a significant improvement in my skin's texture and a more contoured face. Highly recommend!",
+    author: "My Nguyen",
+    date: "7 Hours ago",
+  },
+  {
+    rating: 5,
+    text: "start doing V jet treatment here. No hard sale and can see result in just one session. recommended. 👍",
+    author: "Yee Wut Hing",
+    date: "23 hours ago",
+  },
+  {
+    rating: 5,
     text: "Shebella beauty has great beautician advising all needs for customer’s beauty and slimming programs. Great results after all treatment and worth the price and worth your time to try. There have Jurong and Toa Payoh outlet so travel at your convenient journey. Appreciate Mandy and Joey.",
     author: "John Paul Li",
     date: "5 months ago",
