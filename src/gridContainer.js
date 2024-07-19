@@ -1,4 +1,5 @@
 import React from "react";
+import './gridContainer.css';
 import grid1 from "./Assets/GridAssets/Grid1.mp4";
 import grid2 from "./Assets/GridAssets/Grid2.mp4";
 import grid3 from "./Assets/GridAssets/Grid3.mp4";
@@ -9,147 +10,38 @@ import grid7 from "./Assets/GridAssets/Grid7.mp4";
 import grid8 from "./Assets/GridAssets/Grid8.mp4";
 
 function GridContainer() {
-  const flexWrapper = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    marginTop: "3%",
-    flexDirection: "column",
-  };
-
-  const gridWrapper = {
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr", // Flexible columns
-    gridGap: "30%",
-    padding: "10px",
-    width: "60%", // Increased width for better spacing
-    marginTop: "3%",
-    marginBottom: "5%",
-  };
-
-  const gridContainers = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "column",
-    width: "100%",
-  };
-
-  const videoStyle = {
-    width: "100%",
-    height: "100%",
-  };
+  const renderVideo = (src, isLazy = false) => (
+    <div className="grid-container">
+      <video
+        src={src}
+        className="grid-video"
+        alt="Placeholder Video"
+        muted
+        autoPlay
+        playsInline
+        loop
+        loading={isLazy ? "lazy" : undefined}
+      />
+    </div>
+  );
 
   return (
-    <div style={flexWrapper}>
-      <div style={gridWrapper}>
-        <div style={gridContainers}>
-          <video
-            src={grid1}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-          />
-        </div>
-        <div style={gridContainers}>
-          <video
-            src={grid2}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-          />
-        </div>
+    <div className="flex-wrapper">
+      <div className="grid-wrapper">
+        {renderVideo(grid1)}
+        {renderVideo(grid2)}
       </div>
-      <div style={gridWrapper}>
-        <div style={gridContainers}>
-          <video
-            src={grid3}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-          />
-        </div>
-        <div style={gridContainers}>
-          <video
-            src={grid4}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-          />
-        </div>
+      <div className="grid-wrapper">
+        {renderVideo(grid3)}
+        {renderVideo(grid4)}
       </div>
-      <div style={gridWrapper}>
-        <div style={gridContainers}>
-          <video
-            src={grid5}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-            loading="lazy"
-          />
-        </div>
-        <div style={gridContainers}>
-          <video
-            src={grid7}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            playsInline
-            autoPlay
-            loop
-            loading="lazy"
-          />
-        </div>
+      <div className="grid-wrapper">
+        {renderVideo(grid5, true)}
+        {renderVideo(grid7, true)}
       </div>
-      <div style={gridWrapper}>
-        <div style={gridContainers}>
-          <video
-            src={grid6}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            playsInline
-            loop
-            loading="lazy"
-          />
-        </div>
-        <div style={gridContainers}>
-          <video
-            src={grid8}
-            className="grid-video"
-            style={videoStyle}
-            alt="Placeholder Video"
-            muted
-            autoPlay
-            loop
-            playsInline
-            loading="lazy"
-          />
-        </div>
+      <div className="grid-wrapper">
+        {renderVideo(grid6, true)}
+        {renderVideo(grid8, true)}
       </div>
     </div>
   );

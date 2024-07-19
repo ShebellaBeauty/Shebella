@@ -1,29 +1,52 @@
-import React from "react";
-import SpliceElement from "./splice";
-import GridContainer from "./gridContainer";
-import Listings from "./listings";
-import Contactparent from "./contactParent";
-import Socials from "./socials";
-import AboutSection from "./about";
-import Quote from "./quote";
+import React, { Suspense, lazy } from "react";
 import { ElfsightWidget } from "react-elfsight-widget";
 
+// Lazy load components
+const SpliceElement = lazy(() => import("./splice"));
+const GridContainer = lazy(() => import("./gridContainer"));
+const Listings = lazy(() => import("./listings"));
+const Contactparent = lazy(() => import("./contactParent"));
+const Socials = lazy(() => import("./socials"));
+const AboutSection = lazy(() => import("./about"));
+const Quote = lazy(() => import("./quote"));
+
+// Create a simple loading component
+const Loading = () => <div>Loading...</div>;
 
 function Homepage() {
   return (
     <div>
       <ElfsightWidget style={{marginTop: "1%"}} widgetId="eedbe33a-c475-44ba-b247-23842c4ad9f6" />
-      <SpliceElement />
-      <Quote />
-      <AboutSection />
-      <GridContainer />
-      <Listings />
-      <Contactparent />
-      <Socials />
+      
+      <Suspense fallback={<Loading />}>
+        <SpliceElement />
+      </Suspense>
+      
+      <Suspense fallback={<Loading />}>
+        <Quote />
+      </Suspense>
+      
+      <Suspense fallback={<Loading />}>
+        <AboutSection />
+      </Suspense>
+      
+      <Suspense fallback={<Loading />}>
+        <GridContainer />
+      </Suspense>
+      
+      <Suspense fallback={<Loading />}>
+        <Listings />
+      </Suspense>
+      
+      <Suspense fallback={<Loading />}>
+        <Contactparent />
+      </Suspense>
+      
+      <Suspense fallback={<Loading />}>
+        <Socials />
+      </Suspense>
     </div>
   );
 }
-
-//changes
 
 export default Homepage;

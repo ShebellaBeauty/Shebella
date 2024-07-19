@@ -1,14 +1,11 @@
 //import React modules
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import { ElfsightWidget } from "react-elfsight-widget";
-
 
 //import local components
 import topbanner from "./Assets/topBanner.jpg";
 import Homepage from "./homepage";
 import Listings from "./listings";
-import Carmart from "./carmart";
 import ParentContact from "./contactParent";
 
 function NavBar() {
@@ -182,7 +179,6 @@ function NavBar() {
             </div>
           )}
         </div>
-        <Carmart />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/chat-with-jasonbot" element={<chatbot />} />
