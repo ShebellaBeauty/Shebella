@@ -39,6 +39,7 @@ const AccordionItem = ({ title, children }) => {
             fontSize: "150%",
             background: "#512573",
             color: "white",
+            border: "none",
           }}
         >
           <span style={{ fontWeight: "600" }}>{title}</span>
