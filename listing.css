@@ -6,22 +6,6 @@
   font-size: 130%;
 }
 
-.subcontent:hover {
-  transition: ease-in-out 0.3s;
-  transform: scale(1.1);
-  overflow: hidden;
-  background: white;
-}
-
-
-.pstyle:hover {
-  transition: ease-in-out 0.3s;
-  transform: scale(1.1);
-  overflow: hidden;
-  background: white;
-  color: black;
-}
-
 @media (max-width: 768px) {
   .subcontent {
     font-size: 50%;
