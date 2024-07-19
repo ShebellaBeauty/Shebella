@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import storeImge from "./Assets/GoogleBusinessProfileImages.webp";
 import GoogleReviews from "./reviewCarousell";
-import { ElfsightWidget } from 'react-elfsight-widget';
-
+import { ElfsightWidget } from "react-elfsight-widget";
 
 function Socials() {
   //Step 1: Initialize state
@@ -42,12 +40,6 @@ function Socials() {
     width: "100%",
   };
 
-  // const fbLogoStyle = {
-  //   marginTop: "3%",
-  //   width: "10%",
-  //   height: "10%",
-  // };
-
   //Widget for google reviews
   const reviewWidget = {
     width: "80%",
@@ -58,7 +50,8 @@ function Socials() {
       <div style={reviewWidget} className="widgetControl">
         <GoogleReviews />
       </div>
-      <ElfsightWidget widgetId="9680c738-58a7-4369-8d8e-2b268e961c1a" />
+      <ElfsightWidget widgetId="ef870bda-cf78-488e-85b5-109115b61d29" />
+      <ElfsightWidget widgetId="79f39766-0869-4581-8627-665d8ce21eba" />
     </div>
   );
 }
