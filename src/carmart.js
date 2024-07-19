@@ -1,34 +1,14 @@
+import React from 'react';
+import './carmart.css';
+
 function Carmart() {
-  const textStyles = {
-    color: "white",
-    textAlign: "center",
-    fontSize: "130%",
-  };
-  const containerWrapper = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    background: "darkred",
-    position: "sticky", // Make the component sticky
-    top: 0, // Stick to the top of the viewport
-    zIndex: 999, // Ensure it stays above other content but below the navbar
-    overflow: "hidden", // Hide any overflowing content
-  };
-
-  const aStyle = {
-    color: "white",
-    width: "100%",
-    textDecoration: "none",
-  };
-
   return (
-    <div style={containerWrapper}>
+    <div className="container-wrapper">
       <a
-        style={aStyle}
+        className="carmart-link"
         href="https://www.facebook.com/vskinbeautyconsultancy"
       >
-        <h1 className="carmart-wrapper" style={textStyles}>
+        <h1 className="carmart-text carmart-wrapper">
           Visit our facebook page!
         </h1>
       </a>
