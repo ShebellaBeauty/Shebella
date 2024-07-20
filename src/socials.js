@@ -4,11 +4,6 @@ import { ElfsightWidget } from "react-elfsight-widget";
 import "./socials.css";
 
 function Socials() {
-  //Step 1: Initialize state
-  const [showimage, setShowimage] = useState(false);
-
-  console.log("useState");
-  console.log(showimage);
 
   return (
     <div className="flex-container">
