@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import GoogleReviews from "./reviewCarousell";
 import { ElfsightWidget } from "react-elfsight-widget";
 import "./socials.css";
