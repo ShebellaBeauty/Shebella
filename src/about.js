@@ -86,7 +86,7 @@ const CarOptionsSection = () => {
           textAlign: "center",
         }}
       >
-        Why Shebella Beauty
+        Why Shebella Beauty & what is V-jet
       </h1>
 
       <div>
