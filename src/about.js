@@ -112,6 +112,7 @@ const CarOptionsSection = () => {
             We specialize in the art of miro corrective imaging without using
             needles. 无针微整形如何让自己便加自信与光彩 ✨
             You can trust us with all your beauty needs
+            non-invasive fat removal singapore
           </p>
         </AccordionItem>
 
