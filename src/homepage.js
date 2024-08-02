@@ -16,7 +16,7 @@ const Loading = () => <div>Loading...</div>;
 function Homepage() {
   return (
     <div>
-      <ElfsightWidget style={{marginTop: "1%"}} widgetId="eedbe33a-c475-44ba-b247-23842c4ad9f6" />
+      {/* <ElfsightWidget style={{marginTop: "1%"}} widgetId="eedbe33a-c475-44ba-b247-23842c4ad9f6" /> */}
       
       <Suspense fallback={<Loading />}>
         <SpliceElement />
